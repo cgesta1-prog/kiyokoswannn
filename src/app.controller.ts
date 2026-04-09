@@ -7,9 +7,9 @@ import { BadRequestException } from '@nestjs/common';
 
 @Controller()
 export class AppController {
-  getHello(): any {
-    throw new Error('Method not implemented.');
-  }
+  getHello(): string {
+  return 'Hello World!';
+}
   constructor(private readonly appService: AppService) {}
 
   @Get()
